@@ -1,0 +1,54 @@
+1. Got to the M/c Folder path in cmd
+2. git init : to initialize the git tracking system in the Folder
+3. Check the Global System Config :
+- git Config --global user.name bhupi
+- git Config --global user.email xyz@xyz.com
+4. git status : check the status 
+5. Add first file in the folder as README.md containing the information about the repo.
+- git add README.md
+- git commit -m " This is the first commit" : Move the file into the staging area
+6. Check the branch 
+- git branch
+- git branch -M main : If master is the main branch change it to the main 
+7. Make a repo at the GITHUB
+8. Copy git link of the repository
+- git remote add origin http://..............git
+- git remote -v
+9. Push the local git content into GITHUB repo.
+- git push origin main
+10. Multiple files can also be handled
+- git add.
+- git commit
+- git remote -v
+- git push origin main
+11. Cloning of the GITHUB repo on the local system.
+- git status
+- path
+- git clone http://.................git
+12. staging
+- git status
+- git add a.txt (in staging)
+- We want to change that staging done earlier
+- git restore --staged "a.txt"
+- git reset a.txt
+13. Shows file need to commit
+- git diff --staged
+- git commit -m "We need commit"
+- git push origin main
+14. Branching
+- git branch 
+- To make new branch from the main branch
+- git branch developer
+- git branch : to check the available branches
+: we want to move to the developer branch
+- git checkout developer
+- git add.
+- git commit -m "This is new file in the developer branch"
+: Back to the main branch
+- git checkout main
+- git merge developer : it shows the affect only in local system
+- git push origin main : it affects the remote
+15. All commits history
+- git log
+- git log-p-3 : last 3 commits
+q for exit
